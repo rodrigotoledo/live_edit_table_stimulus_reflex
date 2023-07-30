@@ -11,7 +11,7 @@
 
   <%= link_to 'Edit this todo', edit_todo_path(todo), data: { reflex: "click->TodoReflex#edit", todo_id: todo.id }, class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
   <div class="inline-block ml-2">
-    <%= button_to 'Destroy this todo', todo_path(todo), method: :delete, data: { reflex: "click->TodoReflex#destroy", todo_id: todo.id }, class: "bg-red-100 mt-2 rounded-lg py-3 px-5 bg-gray-100 font-medium" %>
+    <%= link_to 'Destroy this todo', 'javascript:;', data: { controller: 'todos', action: "click->todos#destroy", id: todo.id }, class: "bg-red-100 mt-2 rounded-lg py-3 px-5 bg-gray-100 font-medium" %>
   </div>
   <hr class="mt-6">
 </div>

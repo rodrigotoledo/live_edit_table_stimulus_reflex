@@ -68,7 +68,7 @@ group :development do
 end
 
 gem 'faker', '~> 3.1'
-gem 'stimulus_reflex', '3.5.0.rc2'
+gem 'stimulus_reflex'
 
 gem "action-cable-redis-backport", "~> 1"
 
